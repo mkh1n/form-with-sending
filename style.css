@@ -110,7 +110,7 @@ button:hover{
 
 .alert{
   padding: 10px;
-  font-size: 17px;
+  font-size: 17 px;
   position: absolute;
   top: 40px;
   background-color: rgb(87, 250, 58);
