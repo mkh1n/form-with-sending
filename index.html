@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+     <div class="formHolder">
+    <form>
+      <div class="inputHolder">
+        <div>
+          <input type="text" name="first-name" id="first-name" placeholder="Имя">
+        </div>
+        <small id="first-name-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <input type="text" name="last-name" id="last-name" placeholder="Фамилия">
+        </div>
+        <small id="last-name-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <input type="email" name="email" id="email" placeholder="Имейл">
+        </div>
+        <small id="email-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <input type="tel" name="phone_number" id="phone_number" placeholder="Номер телефона">
+        </div>
+        <small id="phone_number-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <textarea name="text" id="text" placeholder="Сообщение"></textarea>
+        </div>
+      </div>
+      <button type="submit" disabled id="form-button">Отправить</button>
+    </form>
+  </div>
+  <div class="alert">Форма успешно отправлена</div>
+
+  </div>
+  <script src="./index.js"></script>
+
+</body>
+</html>

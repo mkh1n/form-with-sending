@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #292a2b;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.formHolder{
+  box-shadow: 0px 5px 20px 5px #1e1e1ec7;
+  background:#242424;
+}
+.inputHolder{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  margin-bottom: 10px;
+  color: #fff;
+
+}
+input, textarea{
+  background: hsl(0, 0%, 14%) !important;
+  color: #fff !important;
+  padding:9px;
+  width: 200px;
+  border: 1px solid  hsl(0, 0%, 10%);
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+input:focus{
+  background-color: hsl(0, 7%, 20%) !important;
+}
+textarea {
+  resize: none;
+  width: 200px;
+  height: 100px;
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+}
+.invalid{
+  outline: 2px solid rgb(99, 14, 14);
+}
+.valid{
+  outline: 2px solid rgb(13, 94, 19);
+}
+small{
+  width: 200px;
+  box-sizing: border-box;
+  background-color: #fedede;
+  color:red;
+  margin-top: 5px;
+}
+small:not(:empty) {
+  padding: 5px;
+
+}
+form{
+  padding: 30px;
+  display: flex;
+  flex-direction:column;
+  align-items: end;
+}
+button:disabled{
+  cursor:auto;
+  color: #b7b7b7;
+}
+button:disabled:hover{
+  filter:none;
+}
+button{
+  border: none;
+  color: #ffffff;
+  padding:   8px 7px;
+  margin: 20px auto 0 auto;
+  background-color: #0b36a2;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+button:hover{
+  filter: brightness(0.9);
+}
+.activeAlert{
+  opacity: 1 !important;
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+@keyframes ani {
+  0% {transform: translateX(-150%);}
+  100% {transform: translateY(0);}
+}
+
+.alert{
+  padding: 10px;
+  font-size: 17px;
+  position: absolute;
+  top: 40px;
+  background-color: rgb(87, 250, 58);
+  transition: 0.3s ease-out;
+  opacity: 0;
+  
+}
